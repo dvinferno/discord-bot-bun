@@ -1,0 +1,19 @@
+{
+  "name": "discord-bot",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bunx concurrently \"bun run start:bot\"",
+    "start:bot": "bun run src/bot/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^9.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.18.0"
+  }
+}
